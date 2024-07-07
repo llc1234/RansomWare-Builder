@@ -51,22 +51,3 @@ int main() {
     std::cout << "Execution completed successfully." << std::endl;
     return 0;
 }
-
-
-
-
-
-
-/*
-#include <iostream>
-#include <Windows.h>
-
-
-std::string text = "11111\n22222\n33333\n44444";
-
-int main() {
-	MessageBoxA(NULL, text.c_str(), "title", MB_OK);
-
-	return 0;
-}
-*/
