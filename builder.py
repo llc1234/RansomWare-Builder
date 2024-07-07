@@ -31,6 +31,12 @@ def make_exe():
         r.write(bytes([pp]))
     r.close()
 
+def get_program_data():
+    r = open(file, "rb")
+    for pp in r.read():
+        print(pp, end=", ")
+    r.close()
 
 make_exe()
 change_var()
+# get_program_data()
