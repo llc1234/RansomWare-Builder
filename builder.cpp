@@ -44,9 +44,20 @@ void make_exe() {
     r.close();
 }
 
+void get_program_data() {
+    std::ifstream r(file, std::ios::binary);
+    std::vector<unsigned char> data((std::istreambuf_iterator<char>(r)), std::istreambuf_iterator<char>());
+    r.close();
+
+    for (auto& byte : data) {
+        std::cout << static_cast<int>(byte) << ", ";
+    }
+}
+
 int main() {
     make_exe();
     change_var();
+    // get_program_data();
 
     std::cout << "Execution completed successfully." << std::endl;
     return 0;
